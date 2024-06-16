@@ -1,27 +1,24 @@
 
+:root {
+  --primary-dark: #333;
+  --primary-light: #ededed;
+  --secondary-light: #fefefe;
+}
 
-html body{
-  font-family: cursive,"roboto";
+html body {
+  font-family: cursive, "roboto";
   /* font-family:sans-serif; */
-
+  background-color: var(--primary-light);
 }
-header{
-  padding:10px 0; 
+header {
+  padding: 10px 0;
 }
 
-
-
-
-header h1{
+header h1 {
   /* margin:auto auto; */
   text-align: center;
   font-size: 60px;
-  
 }
-
-
-
-
 
 .sidebar-btn {
   width: 190px;
@@ -45,7 +42,7 @@ header h1{
   align-items: center;
 }
 
-#colorPicker{
+#colorPicker {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -56,9 +53,6 @@ header h1{
   overflow: hidden;
   cursor: pointer;
 }
-
-
-
 
 .rounded-color-picker {
   -webkit-appearance: none;
@@ -84,4 +78,17 @@ header h1{
 .rounded-color-picker::-moz-color-swatch {
   border: none;
   border-radius: 50%;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  background-color: var(--secondary-light);
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer{
+  height: 60px;
 }

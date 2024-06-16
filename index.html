@@ -28,6 +28,8 @@
 
       <h1>Etch-A-Sketch</h1>
     </header>
+<p id="message"></p>
+
 
     <main class="main">
       <div class="settings">
@@ -39,8 +41,12 @@
         </button>
         <button class="btn btn-outline-secondary sidebar-btn">Eraser</button>
         <button class="btn btn-outline-secondary sidebar-btn">Clear</button>
+        <button class="btn btn-outline-secondary sidebar-btn" onclick="getSize()">Select Size </button>
+
+
       </div>
-      <div id="grid" class="grid"></div>
+
+      <div id="board" class="board"></div>
     
     </main>
 
@@ -58,5 +64,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
