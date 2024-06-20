@@ -92,3 +92,32 @@ header h1 {
 footer{
   height: 60px;
 }
+
+
+#message{
+  font-size: large;
+  /* background-color:red; */
+  color:white;
+  padding:20px;
+  text-align: center;
+  width: 500px;
+  border-radius: 6px;
+  margin: auto;
+}
+
+#playMsg{
+  font-size: large;
+  /* background-color:red; */
+  margin-top: 5px;
+  width: 500px;
+  border-radius: 6px;
+  margin: auto;
+  background-color:powderblue;
+  padding:20px;
+
+  
+  text-align: center;
+}
+
+
+

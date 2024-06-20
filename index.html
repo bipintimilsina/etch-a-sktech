@@ -29,19 +29,25 @@
       <h1>Etch-A-Sketch</h1>
     </header>
 <p id="message"></p>
+<p id="playMsg"></p>
 
 
     <main class="main">
       <div class="settings">
         <input id="colorPicker" type="color" value="#333333" class="rounded-color-picker">
         <button class="btn btn-dark sidebar-btn">Color mode</button>
+        <button class="btn btn-dark sidebar-btn" id="black" onclick="setColor('black')">Black</button>
 
-        <button class="btn btn-outline-secondary sidebar-btn">
+        <button class="btn btn-outline-secondary sidebar-btn" onclick="setColor('yellow')">
+          Yellow
+        </button>
+        <button class="btn btn-outline-secondary sidebar-btn" onclick="setColor('random')">
           Rainbow mode
         </button>
-        <button class="btn btn-outline-secondary sidebar-btn">Eraser</button>
-        <button class="btn btn-outline-secondary sidebar-btn">Clear</button>
-        <button class="btn btn-outline-secondary sidebar-btn" onclick="getSize()">Select Size </button>
+        <button class="btn btn-outline-secondary sidebar-btn" onclick="eraser()">Eraser</button>
+        <button class="btn btn-outline-secondary sidebar-btn" onclick="reset()">Clear</button>
+
+        <button class="btn btn-outline-secondary sidebar-btn" id="popup" >Select Size </button>
 
 
       </div>
