@@ -16,7 +16,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
+    <!-- <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> -->
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -34,8 +34,7 @@
 
     <main class="main">
       <div class="settings">
-        <input id="colorPicker" type="color" value="#333333" class="rounded-color-picker">
-        <button class="btn btn-dark sidebar-btn">Color mode</button>
+        <input id="colorPicker" type="color" value="#333333" class="rounded-color-picker" >
         <button class="btn btn-dark sidebar-btn" id="black" onclick="setColor('black')">Black</button>
 
         <button class="btn btn-outline-secondary sidebar-btn" onclick="setColor('yellow')">
@@ -44,7 +43,7 @@
         <button class="btn btn-outline-secondary sidebar-btn" onclick="setColor('random')">
           Rainbow mode
         </button>
-        <button class="btn btn-outline-secondary sidebar-btn" onclick="eraser()">Eraser</button>
+        <button class="btn btn-outline-secondary sidebar-btn" id="eraser" onclick="eraser()">Eraser</button>
         <button class="btn btn-outline-secondary sidebar-btn" onclick="reset()">Clear</button>
 
         <button class="btn btn-outline-secondary sidebar-btn" id="popup" >Select Size </button>
